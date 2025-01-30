@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Parabéns!</title>
+  <!-- Link para o Bootstrap -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    /* Customização com fundo rosa suave */
+    body {
+      background-color: #FFDDC1; /* Salmão suave para o fundo */
+      text-align: center;
+      padding: 20px;
+    }
+
+    .message {
+      font-size: 2.5rem;
+      font-weight: bold;
+      color: #FF5733; /* Cor do texto em um tom mais quente de laranja */
+    }
+
+    .photo {
+      width: 200px;
+      border-radius: 50%;
+      margin: 20px;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: auto;
+      padding: 30px;
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Estilo do botão */
+    .btn-primary {
+      background-color: #FF5733; /* Laranja suave */
+      border-color: #FF5733;
+    }
+
+    .btn-primary:hover {
+      background-color: #e64a19; /* Laranja mais escuro no hover */
+      border-color: #e64a19;
+    }
+
+    .btn-info {
+      background-color: #29b6f6; /* Azul suave para o botão de compartilhamento */
+      border-color: #29b6f6;
+      color: white;
+    }
+
+    .btn-info:hover {
+      background-color: #0288d1; /* Azul mais escuro no hover */
+      border-color: #0288d1;
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1 class="message">Parabéns, Algustiana 🎉</h1>
+    <img src="assets/aniversario.jpg" alt="Foto do Parabenizado" class="photo">
+    <div>
+      <p>"Meus parabéns e muitos anos de vida, cheio de paz e sonhos realizados, muita saúde é o que desejo de coração nessa data tão especial"</p>
+      <br>de Vitória pra Algustiana
+      <img src="assets/GIF de celebração.gif" alt="GIF de celebração" class="img-fluid">
+    </div>
+    <button id="surpriseButton" class="btn btn-primary mt-4">Clique para uma surpresa!</button>
+
+    <!-- Botão de compartilhamento no Facebook -->
+    <a href="https://www.facebook.com/sharer/sharer.php?u=https://seusite.com" target="_blank" class="btn btn-info mt-4">
+      Compartilhar no Facebook
+    </a>
+
+  </div>
+
+  <!-- Scripts -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  
+  <script>
+    // Função de JavaScript para exibir uma surpresa
+    document.getElementById('surpriseButton').addEventListener('click', function() {
+      alert('Você é incrível🎉');
+    });
+  </script>
+
+</body>
+</html>
